@@ -1,4 +1,4 @@
-# docker-laravel 🐳
+# Laravel environment on Docker 🐳 and templates for web applications 
 
 ![License](https://img.shields.io/github/license/ucan-lab/docker-laravel?color=f05340)
 ![Stars](https://img.shields.io/github/stars/ucan-lab/docker-laravel?color=f05340)
@@ -36,16 +36,19 @@ http://localhost
 ### app container
 
 - Base image
+  - [ucan-lab/docker-laravel](https://github.com/ucan-lab/docker-laravel)
   - [php](https://hub.docker.com/_/php):8.0-fpm-buster
   - [composer](https://hub.docker.com/_/composer):2.0
 
 ### web container
 
 - Base image
+  - [ucan-lab/docker-laravel](https://github.com/ucan-lab/docker-laravel)
   - [nginx](https://hub.docker.com/_/nginx):1.20-alpine
   - [node](https://hub.docker.com/_/node):16-alpine
 
 ### db container
 
 - Base image
+  - [ucan-lab/docker-laravel](https://github.com/ucan-lab/docker-laravel)
   - [mysql/mysql-server](https://hub.docker.com/r/mysql/mysql-server):8.0
